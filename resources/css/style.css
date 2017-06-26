@@ -60,6 +60,12 @@ h1,h4, span{
   padding-top: 9rem;
 }
 
+.gadgets .product-img{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .arrivals{
   padding: 2rem 3rem;
   background-color: black;

@@ -1,0 +1,224 @@
+/* Overall CSS */
+
+html{
+  font-size:18px;
+  font-family: Helvetica;
+}
+
+body{
+  width: 100%;
+  display:block;
+}
+
+div{
+  display: block;
+}
+
+h1{
+  font-size: 2rem;
+}
+
+h4, span{
+  font-size: 1rem;
+}
+
+h1,h4, span{
+  font-weight: bold;
+}
+
+.flex-container{
+  max-width: 960px;
+  margin: 0 auto;
+}
+/* Header CSS */
+
+.logo{
+  background-color: black;
+  width:100%;
+  color: white;
+  font-size: 1rem;
+  padding: 0.66rem 0 0.66rem 0;
+  align-items: center;
+  text-align: left;
+}
+
+.logo img{
+  height: 1.5rem;
+  padding: 0 0.5rem 0 1rem;
+}
+
+/* Image container */
+
+.img-container{
+  background-image: url("../images/moto.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25rem;
+}
+
+.img-container .flex-container{
+  padding-top: 9rem;
+}
+
+.arrivals{
+  padding: 2rem 3rem;
+  background-color: black;
+  width:20rem;
+  color: white;
+}
+
+.arrivals h4{
+  padding-bottom: 0.25rem
+}
+
+/* Navigation CSS */
+
+nav{
+  background-color: firebrick;
+}
+
+.nav-bar{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.75rem 0;
+}
+
+.mobile-nav-bar{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.75rem 0;
+}
+
+
+
+/* Main Content CSS */
+
+.gadgets{
+  display:flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+}
+
+.gadgets img{
+  height: 9rem;
+  padding: 2rem 0;
+  max-width: 8em;
+}
+
+
+.gadgets h4{
+  background-color: black;
+  color: white;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.pen, .watch, .glasses{
+  border: 4px solid black;
+  width:30%;
+  justify-content: center;
+}
+
+/* Information CSS */
+
+.info{
+  display: flex;
+  justify-content: space-between;
+}
+
+.location, .hours{
+  width: 35%;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.info h4{
+  background-color: black;
+  color: white;
+  padding: 1rem 0 1rem 2rem;
+}
+
+.info p{
+  padding-top: 5px;
+}
+
+/* Footer CSS */
+
+footer{
+  background-color: black;
+  color: white;
+  padding: 5rem 0;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1024px){
+  .pen, .watch, .glasses{
+    width: 47%;
+  }
+  .glasses{
+    display: none;
+  }
+  .nav-bar{
+    display:none
+  }
+}
+
+@media only screen and (min-width: 1024px){
+  .mobile-nav-bar{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px){
+  .img-container{
+    height: 15rem;
+  }
+  .img-container .flex-container{
+  }
+  .arrivals{
+    width:100%;
+    padding: 1rem 2rem;
+  }
+  .img-container h4{
+    font-size: 0.77rem;
+  }
+  .img-container h1{
+    font-size: 1rem;
+  }
+  .gadgets{
+    justify-content: center;
+  }
+  .pen, .watch, .glasses{
+    width: 90%;
+  }
+  .watch{
+    display:none;
+  }
+  .info{
+   display:block;
+  }
+  .location, .hours{
+    width: 90%;
+    margin: 0.5em auto;
+    justify-content: center;
+  }
+  .location{
+    padding-top: 3rem;
+    padding-bottom:0.5rem;
+  }
+  .hours{
+    padding: 0 0 3rem 0;
+  }
+  footer{
+    text-align: center;
+  }
+}
